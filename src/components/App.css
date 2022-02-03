@@ -1,0 +1,27 @@
+.App {
+    
+    color: var(--text-primary);
+    background-color:var(--background);
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    height: calc(100vh - 40px);
+    transition: all .5s;
+  }
+
+  
+ button.MuiButtonBase-root.MuiIconButton-root  {
+      color: var(--text-primary)
+  }
+  #root > div > div.MuiFormGroup-root.formGroup.css-dmmspl-MuiFormGroup-root > div.containerButton > button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.button.css-1e6y48t-MuiButtonBase-root-MuiButton-root
+  {
+    color: var(--text-primary);
+    background-color: var(--accent);
+    transition: all .5s;
+  }
+  #outlined-basic
+  {
+    border:1px solid var(--border);
+    color: var(--text-primary);
+    
+  }

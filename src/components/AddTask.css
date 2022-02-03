@@ -1,0 +1,24 @@
+.formGroup
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 30vh;
+    margin:auto;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    
+
+}
+.button
+{
+    width: 30%;
+    
+}
+.containerButton
+{
+    display: flex;
+    justify-content: space-between;
+    
+}

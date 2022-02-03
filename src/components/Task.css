@@ -1,0 +1,12 @@
+.Listelement
+{
+    width: 80%;
+    margin:auto;
+    border-bottom: var(--border)
+    
+}
+.ListElementDone
+{
+    width: 80%;
+    margin:auto;
+}
