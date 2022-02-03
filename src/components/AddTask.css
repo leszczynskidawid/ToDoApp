@@ -8,17 +8,13 @@
     margin:auto;
     border-bottom: 2px solid black;
     padding: 10px;
-    
-
 }
 .button
 {
-    width: 30%;
-    
+    width: 30%;  
 }
 .containerButton
 {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
 }

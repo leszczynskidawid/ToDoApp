@@ -4,7 +4,7 @@ import FormGroup from '@mui/material/FormGroup';
 import DateTimePicker from 'react-datetime-picker'
 import { TextField, Checkbox } from '@mui/material';
 import { FormControlLabel } from '@mui/material';
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import { IconButton } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
@@ -30,16 +30,11 @@ const type = e.target.type;
  setValue(e.target.value)
 else if(type === "checkbox")
 setChecboxActive(e.target.checked)
-
 };
 
 const validationResultAddTask  = () => {
-     let succes = false;
+    let succes = false;
     let input = false;
-    let  date= false;
- 
-
-
      if(inputValue.length > 1 && inputValue.length<25)
      {
         input = true; 
@@ -57,15 +52,11 @@ const validationResultAddTask  = () => {
 };
 
 
-const handleAddTask  = (e) => {
-
+const handleAddTask  = () => {
     const validationResult = validationResultAddTask()
-
 
     if(validationResult.succes)
     { 
-      
-        
         setError(false)
         props.addTask(inputValue,valueDate.toLocaleString(),checkboxActive)
       ClearAddFormTask()
@@ -73,15 +64,10 @@ const handleAddTask  = (e) => {
     else 
     {
         setError(true)
-        console.log("nipowodzeni") 
          ClearAddFormTask()
     }
-
-  
-
-     
 };
-console.log(props.theme)
+
 
 const ClearAddFormTask=()=>
 {   

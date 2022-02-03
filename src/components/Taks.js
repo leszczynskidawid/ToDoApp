@@ -5,8 +5,9 @@ import ListElement from './ListElement';
 import "./Task.css"
  
  const Task  = (props) => {
-
-
+   
+      
+    
   const active = props.task.filter(task =>  task.active === false)
   const done = props.task.filter(task =>  task.active === true)
  
@@ -40,6 +41,7 @@ return (
 
 </>
 )
+   
 
  };
  export default Task;
